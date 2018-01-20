@@ -2,8 +2,10 @@ package example;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+import com.qaagility.controller
  
 public class AppTest {
+  Calculator calc = new Calculator()
 
       public void testSlow() {
         System.out.println("slow");
@@ -19,7 +21,7 @@ public class AppTest {
 
 	@Test	
       public void testCalc() {
-        assertEquals("Result", 9, 9);
+        assertEquals("Result", 9, calc.add());
       }
 	
 }
