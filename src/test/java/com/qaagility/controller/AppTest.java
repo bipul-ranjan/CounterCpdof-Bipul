@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import com.qaagility.controller;
  
 public class AppTest {
-  Calculator calc = new Calculator()
+  Calculator calc = new Calculator();
 
       public void testSlow() {
         System.out.println("slow");
