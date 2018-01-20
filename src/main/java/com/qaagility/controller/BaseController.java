@@ -27,7 +27,7 @@ public class BaseController {
 	public String welcome(ModelMap model) {
 		
 
-		model.addAttribute("message", "Welcome - " + dateFormat.format(date));
+		model.addAttribute("message-Changed", "Welcome - " + dateFormat.format(date));
 		model.addAttribute("counter", ++counter);
 		logger.debug("[welcome] counter : {}", counter);
 
@@ -39,7 +39,7 @@ public class BaseController {
 	@RequestMapping(value = "/{name}", method = RequestMethod.GET)
 	public String welcomeName(@PathVariable String name, ModelMap model) {
 
-		model.addAttribute("message", "Welcome - " + name + " - " + dateFormat.format(date));
+		model.addAttribute("message-changed", "Welcome - " + name + " - " + dateFormat.format(date));
 		model.addAttribute("counter", ++counter);
 		logger.debug("[welcomeName] counter : {}", counter);
 		return VIEW_INDEX;
